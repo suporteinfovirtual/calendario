@@ -90,8 +90,8 @@ export default function Home() {
       <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
         <Card className="w-full max-w-md p-8 shadow-lg">
           <div className="text-center mb-6">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Webhook Messenger</h1>
-            <p className="text-gray-600">Envie mensagens de texto ou áudio para seu webhook</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Agendador Roberto</h1>
+            <p className="text-gray-600">Crie eventos para a agenda de Roberto</p>
           </div>
           <Button
             onClick={() => (window.location.href = getLoginUrl())}
@@ -110,8 +110,8 @@ export default function Home() {
       <div className="max-w-2xl mx-auto w-full">
         {/* Header */}
         <div className="mb-8 pt-6">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Webhook Messenger</h1>
-          <p className="text-gray-600">Olá, {user?.name || "usuário"}! Envie mensagens para seu webhook.</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">Agendador Roberto</h1>
+          <p className="text-gray-600">Olá, {user?.name || "usuário"}!Crie eventos para a agenda de Roberto.</p>
         </div>
 
         {/* Feedback Messages */}
@@ -129,7 +129,7 @@ export default function Home() {
 
         {/* Text Message Card */}
         <Card className="p-6 mb-6 shadow-lg">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Enviar Mensagem de Texto</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">Enviar agendamento por texto</h2>
           <div className="space-y-4">
             <Textarea
               placeholder="Digite sua mensagem aqui..."
@@ -161,7 +161,7 @@ export default function Home() {
 
         {/* Audio Message Card */}
         <Card className="p-6 shadow-lg">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Enviar Mensagem de Áudio</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">Enviar agendamento por Áudio</h2>
           <div className="space-y-4">
             {!audioBlob ? (
               <Button
