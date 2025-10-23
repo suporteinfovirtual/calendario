@@ -5,7 +5,7 @@ import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
 import { TRPCError } from "@trpc/server";
 
-const WEBHOOK_URL = "https://4f516537b972.ngrok-free.app/webhook/webhook";
+const WEBHOOK_URL = "https://4f516537b972.ngrok-free.app/webhook-test/webhook";
 
 // Helper function to send data to webhook
 async function sendToWebhook(data: any) {
