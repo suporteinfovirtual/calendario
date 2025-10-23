@@ -7,17 +7,17 @@
     "NODE_ENV": "production"
   },
   "functions": {
-    "server/**/*.ts": {
+    "api/**/*.ts": {
       "runtime": "nodejs18.x"
     }
   },
   "rewrites": [
     {
-      "source": "/api/trpc/:path*",
-      "destination": "/api/trpc/:path*"
+      "source": "/api/:path*",
+      "destination": "/api"
     },
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
